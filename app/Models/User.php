@@ -51,4 +51,9 @@ class User extends Authenticatable
     {
         $this->attributes['password'] = Hash::make($value);
     }
+
+    public function getFullNameAttribute()
+    {
+        return sprintf('%s %s', ucfirst($this->first_name), ucfirst($this->last_name));
+    }
 }

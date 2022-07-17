@@ -6,9 +6,13 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{{ config("app.name") }}</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
-        @vite(["resources/css/app.css", "resources/js/app.js"])
+        @vite([
+            "resources/css/bootstrap.min.css",
+            "resources/css/app.css",
+            "resources/js/jquery-3.5.1.slim.min.js",
+            "resources/js/bootstrap.bundle.min.js",
+            "resources/js/app.js"
+        ])
     </head>
     <body>
         @include('sweetalert::alert')
