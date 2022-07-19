@@ -8,13 +8,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">Login</div>
+                        <div class="card-header py-3">Login</div>
                         <div class="card-body">
 
                             <form action="{{ route('login.post') }}" method="POST">
                                 @csrf
-                                <div class="form-group row">
-                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
+                                <div class="form-group row pb-3">
+                                    <label for="email_address" class="col-md-4 col-form-label text-end">E-Mail
                                         Address</label>
                                     <div class="col-md-6">
                                         <input type="text" id="email_address" class="form-control" name="email"
@@ -25,8 +25,8 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="form-group row pb-4">
+                                    <label for="password" class="col-md-4 col-form-label text-end">Password</label>
                                     <div class="col-md-6">
                                         <input type="password" id="password" class="form-control" name="password" required>
                                         @if ($errors->has('password'))
@@ -35,7 +35,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
+                                <div class="form-group row pb-3">
                                     <div class="col-md-4 col-form-label"></div>
                                     <div class="col-md-6">
                                         <div class="checkbox">
@@ -46,7 +46,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-10 offset-md-4 text-md-right">
+                                <div class="col-md-6 offset-md-4 text-end pb-3">
                                     <button type="submit" class="btn btn-primary">
                                         Login
                                     </button>

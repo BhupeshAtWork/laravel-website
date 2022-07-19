@@ -6,13 +6,13 @@
             <div class="row justify-content-center">
                 <div class="col-md-8">
                     <div class="card">
-                        <div class="card-header">Register</div>
+                        <div class="card-header py-3">Register</div>
                         <div class="card-body">
 
                             <form action="{{ route('register.post') }}" method="POST">
                                 @csrf
-                                <div class="form-group row">
-                                    <label for="first_name" class="col-md-4 col-form-label text-md-right">
+                                <div class="form-group row pb-3">
+                                    <label for="first_name" class="col-md-4 col-form-label text-end">
                                         First Name
                                     </label>
                                     <div class="col-md-6">
@@ -24,8 +24,8 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="last_name" class="col-md-4 col-form-label text-md-right">Last Name</label>
+                                <div class="form-group row pb-3">
+                                    <label for="last_name" class="col-md-4 col-form-label text-end">Last Name</label>
                                     <div class="col-md-6">
                                         <input type="text" id="last_name" class="form-control" name="last_name"
                                             autofocus>
@@ -35,8 +35,8 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="email_address" class="col-md-4 col-form-label text-md-right">E-Mail
+                                <div class="form-group row pb-3">
+                                    <label for="email_address" class="col-md-4 col-form-label text-end">E-Mail
                                         Address</label>
                                     <div class="col-md-6">
                                         <input type="text" id="email_address" class="form-control" name="email"
@@ -47,8 +47,8 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+                                <div class="form-group row pb-3">
+                                    <label for="password" class="col-md-4 col-form-label text-end">Password</label>
                                     <div class="col-md-6">
                                         <input type="password" id="password" class="form-control" name="password" required>
                                         @if ($errors->has('password'))
@@ -57,8 +57,8 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
-                                    <label for="confirm_password" class="col-md-4 col-form-label text-md-right">Confirm
+                                <div class="form-group row pb-2">
+                                    <label for="confirm_password" class="col-md-4 col-form-label text-end">Confirm
                                         Password</label>
                                     <div class="col-md-6">
                                         <input type="password" id="confirm_password" class="form-control"
@@ -69,7 +69,7 @@
                                     </div>
                                 </div>
 
-                                <div class="form-group row">
+                                <div class="form-group row pb-3">
                                     <div class="col-md-4 col-form-label"></div>
                                     <div class="col-md-6 offset-md-4">
                                         <div class="checkbox">
@@ -80,7 +80,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-10 offset-md-4 text-md-right">
+                                <div class="col-md-6 offset-md-4 text-end pb-4">
                                     <button type="submit" class="btn btn-primary">
                                         Register
                                     </button>
