@@ -6,8 +6,6 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{{ config("app.name") }}</title>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-
         @vite(["resources/css/app.css", "resources/js/app.js"])
     </head>
     <body>

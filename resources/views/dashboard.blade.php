@@ -1,11 +1,11 @@
 @extends('_layout.base')
 
 @section('content')
-<div class="container w-em-110">
+<div class="container col-md-10">
     <div class="row justify-content-center">
         <div class="col-md-10">
             <div class="card">
-                <div class="card-header">{{ __('Dashboard') }}</div>
+                <div class="card-header py-3">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
                     @if (session('success'))
