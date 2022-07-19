@@ -5,8 +5,9 @@ namespace App\Http\Controllers\Auth;
 use App\Service\UserService;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
+use App\Http\Requests\PasswordResetRequest;
 use App\Http\Requests\RegisterRequest;
-
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 
@@ -87,6 +88,40 @@ class AuthController extends Controller
         }
 
         return redirect('login');
+    }
+
+    /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function reset()
+    {
+        return view('auth.resetPassword');
+    }
+
+    /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function sendResetToken(PasswordResetRequest $request)
+    {
+        $data = $request->only(['email']);
+
+        return view('auth.tokenSent', compact('data'));
+    }
+
+    /**
+     * Write code on Method
+     *
+     * @return response()
+     */
+    public function reSendResetToken(Request $request)
+    {
+        $data = $request->only(['email']);
+
+        return view('auth.tokenSent', compact('data'));
     }
 
     /**

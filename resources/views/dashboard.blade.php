@@ -1,9 +1,9 @@
 @extends('_layout.base')
 
 @section('content')
-<div class="container col-md-10">
+<div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header py-3">{{ __('Dashboard') }}</div>
 

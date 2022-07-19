@@ -19,4 +19,9 @@ Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.pos
 Route::get('registration', [AuthController::class, 'getRegister'])->name('register');
 Route::post('post-registration', [AuthController::class, 'postRegister'])->name('register.post');
 Route::get('/', [AuthController::class, 'index'])->name('dashboard');
+
+Route::get('/password/reset', [AuthController::class, 'reset'])->name('password.reset');
+Route::post('/password/send-token', [AuthController::class, 'sendResetToken'])->name('password.token.send');
+Route::post('/password/resend-token', [AuthController::class, 'reSendResetToken'])->name('password.token.resend');
+
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');

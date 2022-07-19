@@ -4,7 +4,7 @@
     <main class="login-form">
         <div class="cotainer">
             <div class="row justify-content-center">
-                <div class="col-md-8">
+                <div class="col-md-6">
                     <div class="card">
                         <div class="card-header py-3">Register</div>
                         <div class="card-body">
@@ -61,7 +61,7 @@
                                     <label for="confirm_password" class="col-md-4 col-form-label text-end">Confirm
                                         Password</label>
                                     <div class="col-md-6">
-                                        <input type="password" id="confirm_password" class="form-control"
+                                        <input type="text" id="confirm_password" class="form-control"
                                             name="confirm_password" required>
                                         @if ($errors->has('confirm_password'))
                                             <span class="text-danger">{{ $errors->first('confirm_password') }}</span>
